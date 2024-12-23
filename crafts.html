@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统工艺 - 中国传统民俗文化</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/crafts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">民俗文化</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./festivals.html">传统节日</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="crafts.html">传统工艺</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">登录/注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="crafts-header">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">传统工艺</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                探索中国非物质文化遗产，传承千年匠心
+            </p>
+        </div>
+    </header>
+
+    <!-- 分类区域 -->
+    <section class="category-section container my-5">
+        <ul class="nav nav-tabs craft-tabs" id="craftTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all" type="button">全部</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pottery" type="button">陶瓷</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#embroidery" type="button">刺绣</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#papercut" type="button">剪纸</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#lacquer" type="button">漆器</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 工艺展示区域 -->
+    <section class="crafts-showcase container my-5">
+        <div class="row g-4">
+            <!-- 陶瓷工艺 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="craft-card" data-category="pottery">
+                    <img src="images/pottery.png" alt="景德镇陶瓷" class="craft-image">
+                    <div class="craft-content">
+                        <h3>景德镇陶瓷</h3>
+                        <p class="craft-description">
+                            景德镇素有"瓷都"之称，千年窑火传承着中国陶瓷文化的精髓。景德镇陶瓷以"白如玉、明如镜、薄如纸、声如磬"的特点闻名于世，其精湛的制作工艺和独特的青花瓷技术，展现了中国传统工艺的最高水平。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="pottery">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 刺绣工艺 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="craft-card" data-category="embroidery">
+                    <img src="images/embroidery.png" alt="苏州刺绣" class="craft-image">
+                    <div class="craft-content">
+                        <h3>苏州刺绣</h3>
+                        <p class="craft-description">
+                            苏绣是中国四大名绣之一，以其精细的针法和高超的艺术表现力著称。苏绣工艺讲究"一针一线"，强调针法的细密均匀，色彩的自然过渡，能够将自然景物刺绣得栩栩如生，被誉为"绣中之冠"。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="embroidery">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 剪纸工艺 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="craft-card" data-category="papercut">
+                    <img src="images/papercut.png" alt="剪纸艺术" class="craft-image">
+                    <div class="craft-content">
+                        <h3>剪纸艺术</h3>
+                        <p class="craft-description">
+                            剪纸是中国最普及的民间艺术之一，已被列入世界非物质文化遗产名录。剪纸艺术以其独特的造型和丰富的寓意，展现了中国传统文化中的吉祥寓意和美学追求，是节日装饰和民间活动中不可或缺的艺术形式。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="papercut">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 漆器工艺 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="craft-card" data-category="lacquer">
+                    <img src="images/lacquer.png" alt="漆器工艺" class="craft-image">
+                    <div class="craft-content">
+                        <h3>漆器工艺</h3>
+                        <p class="craft-description">
+                            中国漆器工艺历史悠久，以其精美的髹漆技艺和独特的装饰手法闻名。漆器制作需要经过多道工序，包括打磨、髹漆、彩绘、镶嵌等，每件作品都需要经过数月甚至数年的精心制作，展现了非凡的工艺价值。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="lacquer">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 景泰蓝 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="craft-card" data-category="cloisonne">
+                    <img src="images/cloisonne.png" alt="景泰蓝" class="craft-image">
+                    <div class="craft-content">
+                        <h3>景泰蓝</h3>
+                        <p class="craft-description">
+                            景泰蓝是中国特有的珐琅器制作工艺，以其精美绝伦的工艺和绚丽多彩的装饰效果著称。制作过程包括掐丝、填料、烧制等多个环节，每件作品都凝聚着工匠们的智慧和心血，是中国传统金属工艺的巅峰之作。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="cloisonne">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 木雕工艺 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="craft-card" data-category="woodcarving">
+                    <img src="images/woodcarving.png" alt="东阳木雕" class="craft-image">
+                    <div class="craft-content">
+                        <h3>东阳木雕</h3>
+                        <p class="craft-description">
+                            东阳木雕是中国著名的传统工艺，以其精细的雕刻技艺和深厚的文化内涵闻名。木雕作品题材广泛，包括人物、山水、花鸟等，技法讲究"深浅浮雕"相结合，立体感强，细节丰富。
+                        </p>
+                        <button class="btn btn-outline-primary learn-more" data-craft="woodcarving">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工艺详情模态框 -->
+     <!-- 在 imageModal 之前添加 -->
+<div class="modal fade" id="craftModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 在工艺详情模态框后面添加 -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <img src="" class="img-fluid" id="fullscreenImage">
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- 联系方式 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-envelope me-2"></i>联系我们</h5>
+          <ul class="list-unstyled footer-contact">
+            <li><i class="fas fa-phone me-2"></i>电话：400-123-4567</li>
+            <li><i class="fas fa-envelope me-2"></i>邮箱：info@culture.com</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i>地址：北京市朝阳区文化路88号</li>
+          </ul>
+        </div>
+        
+        <!-- 快速链接 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-link me-2"></i>快速链接</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="festivals.html"><i class="fas fa-angle-right me-2"></i>传统节日</a></li>
+            <li><a href="crafts.html"><i class="fas fa-angle-right me-2"></i>传统工艺</a></li>
+            <li><a href="#"><i class="fas fa-angle-right me-2"></i>隐私政策</a></li>
+          </ul>
+        </div>
+        
+        <!-- 关注我们 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-heart me-2"></i>关注我们</h5>
+          <div class="social-links">
+            <a href="#" class="me-3"><i class="fab fa-weixin fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-weibo fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-qq fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-douyin fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom text-center mt-4 pt-4 border-top">
+        <p class="mb-0">© 2024 中国传统民俗文化网. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/crafts.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册 - 中国传统民俗文化</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="login-page">
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">民俗文化</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">首页</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./festivals.html">传统节日</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="crafts.html">传统工艺</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="./login.html">登录/注册</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="login-container">
+    <div class="form-box">
+        <div class="form-value">
+            <div class="form-header">
+                <h2>欢迎回来</h2>
+                <p>登录您的账号以继续</p>
+            </div>
+            
+            <!-- 登录表单 -->
+            <form id="loginForm">
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="loginUsername" required>
+                    <label for="loginUsername">用户名</label>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" required>
+                    <label for="loginPassword">密码</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">记住我</label>
+                    <a href="#">忘记密码?</a>
+                </div>
+                <button type="submit">登录</button>
+            </form>
+
+            <!-- 注册表单 -->
+            <form id="registerForm" class="d-none">
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="registerUsername" required>
+                    <label for="registerUsername">用户名</label>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="registerEmail" required>
+                    <label for="registerEmail">邮箱</label>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="registerPassword" required>
+                    <label for="registerPassword">密码</label>
+                </div>
+                <button type="submit">注册</button>
+            </form>
+
+            <div class="register-link">
+                <p id="switchText">没有账号? <a href="#" id="switchBtn">立即注册</a></p>
+            </div>
+
+            <div class="social-login">
+                <p>社交账号登录</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html> 

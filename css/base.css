@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #CD2626;
+    --secondary-color: #B87333;
+    --bg-color: #F5F5DC;
+    --text-color: #333333;
+}
+/* :root {
+    --primary-color: #0b0b0b;
+} */
+
+/* 全局样式 */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(205, 38, 38, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 通用动画效果 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+/* 通用按钮样式 */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+/* 页脚样式 */
+footer {
+    background: linear-gradient(45deg, #1a1a1a, #2c2c2c) !important;
+  }
+  
+  .footer-contact li {
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  
+  .footer-contact li i {
+    color: var(--primary-color);
+    width: 20px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+  }
+  
+  .footer-links i {
+    color: var(--primary-color);
+  }
+  
+  .social-links a {
+    color: #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    display: inline-block;
+  }
+  
+  .qr-code {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 3px solid var(--primary-color);
+  }
+  
+  .footer-bottom {
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .social-links {
+      margin-bottom: 20px;
+    }
+    
+    .footer-contact, .footer-links {
+      margin-bottom: 30px;
+    }
+  }

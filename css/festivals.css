@@ -1,0 +1,240 @@
+/* 时钟和倒计时样式 */
+.clock-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.current-time {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#digital-clock {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Digital-7', monospace;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+
+#current-date {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+.festival-countdown {
+  text-align: center;
+}
+
+.festival-countdown h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 80px;
+}
+
+#countdown-days, #countdown-hours, #countdown-minutes, #countdown-seconds {
+  color: #fff;
+}
+
+.countdown-item span {
+  display: block;
+}
+
+.countdown-item span:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  #digital-clock {
+    font-size: 2.5rem;
+  }
+
+  .countdown-item {
+    min-width: 60px;
+    padding: 10px;
+  }
+
+  .countdown-item span:first-child {
+    font-size: 1.5rem;
+  }
+}
+
+/* 时间轴容器样式 */
+.festival-timeline {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* 创建时间轴线 */
+.festival-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+/* 时间轴项目样式 */
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+/* 时间轴内容卡片 */
+.timeline-content {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* 时间轴内容卡片悬停效果 */
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 节日标题样式 */
+.timeline-content h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* 日期样式 */
+.timeline-content .date {
+  display: inline-block;
+  padding: 5px 15px;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* 图片容器样式 */
+.festival-img {
+  margin: 20px -25px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 图片样式 */
+.festival-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 图片悬停效果 */
+.festival-img:hover img {
+  transform: scale(1.05);
+}
+
+/* 描述文字样式 */
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+/* 按钮样式 */
+.btn-custom {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 交错布局样式 */
+.timeline-item:nth-child(odd) .timeline-content::before {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .festival-timeline::before {
+    left: 30px;
+  }
+
+  .timeline-content {
+    margin-left: 60px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -45px;
+    right: auto;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .festival-img img {
+    height: 200px;
+  }
+}

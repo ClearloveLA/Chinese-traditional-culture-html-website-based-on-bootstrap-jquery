@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统节日 - 中国传统民俗文化</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/festivals.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+      <!-- 导航栏 -->
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">民俗文化</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="./index.html">首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./festivals.html">传统节日</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crafts.html">传统工艺</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">登录/注册</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- 节日介绍头部 -->
+<header class="festival-header">
+  <div class="container">
+    <div class="clock-container" data-aos="fade-down">
+      <div class="current-time">
+        <div id="digital-clock"></div>
+        <div id="current-date"></div>
+      </div>
+      <div class="festival-countdown">
+        <h3 id="next-festival">距离下个节日还有</h3>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <span id="countdown-days">00</span>
+            <span class="countdown-label">天</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-hours">00</span>
+            <span class="countdown-label">时</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-minutes">00</span>
+            <span class="countdown-label">分</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-seconds">00</span>
+            <span class="countdown-label">秒</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center" data-aos="fade-up">传统节日</h1>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="200">
+      探索中国传统节日的魅力与内涵
+    </p>
+  </div>
+</header>
+
+    <!-- 节日时间轴 -->
+    <section class="festival-timeline container my-5">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <!-- 春节 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3>春节</h3>
+              <p class="date">农历正月初一</p>
+              <div class="festival-img">
+                <img src="images/spring-festival.png" alt="春节" class="img-fluid">
+              </div>
+              <p class="description">
+                春节是中国最重要的传统节日，象征着新的一年的开始。人们会贴春联、放鞭炮、吃团圆饭，共同庆祝新春佳节的到来。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="spring">了解更多</button>
+            </div>
+          </div>
+    
+          <!-- 元宵节 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h3>元宵节</h3>
+              <p class="date">农历正月十五</p>
+              <div class="festival-img">
+                <img src="images/f2.png" alt="元宵节" class="img-fluid">
+              </div>
+              <p class="description">
+                元宵节是春节后的第一个重要节日，人们赏花灯、猜灯谜、吃元宵，象征着团圆和美满。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="lantern">了解更多</button>
+            </div>
+          </div>
+    
+          <!-- 清明节 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3>清明节</h3>
+              <p class="date">公历4月5日前后</p>
+              <div class="festival-img">
+                <img src="images/f3.png" alt="清明节" class="img-fluid">
+              </div>
+              <p class="description">
+                清明节是中国传统的祭祖节日，也是踏青郊游的好时节。人们扫墓祭祖，寄托对先人的思念之情。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="qingming">了解更多</button>
+            </div>
+          </div>
+    
+          <!-- 端午节 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h3>端午节</h3>
+              <p class="date">农历五月初五</p>
+              <div class="festival-img">
+                <img src="images/f4.png" alt="端午节" class="img-fluid">
+              </div>
+              <p class="description">
+                端午节有着悠久的历史，人们通过赛龙舟、吃粽子、挂艾草等方式来纪念屈原，祈求平安健康。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="dragonboat">了解更多</button>
+            </div>
+          </div>
+    
+          <!-- 中秋节 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3>中秋节</h3>
+              <p class="date">农历八月十五</p>
+              <div class="festival-img">
+                <img src="images/f5.png" alt="中秋节" class="img-fluid">
+              </div>
+              <p class="description">
+                中秋节是仅次于春节的重要传统节日，象征着团圆。人们赏月、吃月饼，共享天伦之乐。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="midautumn">了解更多</button>
+            </div>
+          </div>
+    
+          <!-- 重阳节 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h3>重阳节</h3>
+              <p class="date">农历九月初九</p>
+              <div class="festival-img">
+                <img src="images/f6.png" alt="重阳节" class="img-fluid">
+              </div>
+              <p class="description">
+                重阳节又称登高节，人们登高望远、赏菊饮酒，享受金秋时节的美好。现在也是我国的老年节。
+              </p>
+              <button class="btn btn-custom show-details" data-festival="doubleninth">了解更多</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 节日详情模态框 -->
+    <div class="modal fade" id="festivalModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 动态内容 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- 联系方式 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-envelope me-2"></i>联系我们</h5>
+          <ul class="list-unstyled footer-contact">
+            <li><i class="fas fa-phone me-2"></i>电话：400-123-4567</li>
+            <li><i class="fas fa-envelope me-2"></i>邮箱：info@culture.com</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i>地址：北京市朝阳区文化路88号</li>
+          </ul>
+        </div>
+        
+        <!-- 快速链接 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-link me-2"></i>快速链接</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="festivals.html"><i class="fas fa-angle-right me-2"></i>传统节日</a></li>
+            <li><a href="crafts.html"><i class="fas fa-angle-right me-2"></i>传统工艺</a></li>
+            <li><a href="#"><i class="fas fa-angle-right me-2"></i>隐私政策</a></li>
+          </ul>
+        </div>
+        
+        <!-- 关注我们 -->
+        <div class="col-md-4">
+          <h5 class="mb-4"><i class="fas fa-heart me-2"></i>关注我们</h5>
+          <div class="social-links">
+            <a href="#" class="me-3"><i class="fab fa-weixin fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-weibo fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-qq fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-douyin fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom text-center mt-4 pt-4 border-top">
+        <p class="mb-0">© 2024 中国传统民俗文化网. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/festivals.js"></script>
+</body>
+</html>
